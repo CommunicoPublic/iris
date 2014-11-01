@@ -1,0 +1,53 @@
+.TH "IRIS-CONFIG" 8 "2013-04-03" "Iris SMTP/LMTP/POP3/IMAP4 server" "Iris SMTP/LMTP/POP3/IMAP4 server"
+
+.SH NAME
+iris\-config \- Iris SMTP/LMTP/POP3/IMAP4 server development tool
+.SH "SYNOPSIS"
+.PP
+\fBiris\-config\fR [ \-\-\fBflags\fR ] [ \-\-\fBcc\fR ] [ \-\-\fBcxx\fR ] [ \-\-\fBmake\fR ] [ \-\-\fBlibs\fR ] [ \-\-\fBincludes\fR ] [ \-\-\fBsharedir\fR ] [ \-\-\fBlibexecdir\fR ] [ \-\-\fBversion\fR ]
+.SH "DESCRIPTION"
+.PP
+\fBiris\-config\ prints building configuration and parameters (compiler flags, list of include directories, etc) of iris\-server. See below.
+.SH "OPTIONS"
+.TP
+\fB\-\-version\fR
+displays the Iris version number
+.TP
+\fB\-\-flags\fR
+displays C++ compiler flags
+.TP
+\fB\-\-cc\fR
+displays executable name of C compiler
+.TP
+\fB\-\-cxx\fR
+displays executable name of C++ compiler
+.TP
+\fB\-\-make\fR
+displays executable name of make
+.TP
+\fB\-\-libs\fR
+displays list of libraries
+.TP
+\fB\-\-includes\fR
+displays list of include dirs
+.TP
+\fB\-\-sharedir\fR
+displays directory with shared files, examples, etc
+.TP
+\fB\-\-libexecdir\fR
+displays directory with loadable modules
+.SH AUTHOR
+Written by Communico, LLC.
+.SH "REPORTING BUGS"
+Report ls bugs to iris\-bugs@communico.pro
+.br
+Iris home page: <http://www.communico.pro/iris/>
+.SH COPYRIGHT
+Copyright \(co 2013 Iris Dev. team. All rights reserved.
+.br
+License: see <http://www.communico.pro/license/>.
+.SH SEE ALSO
+.BR iris\-config\-test (8),
+.BR iris\-server (8),
+.BR /usr/share/doc/iris-0.0-core/README.Debian.gz
+.

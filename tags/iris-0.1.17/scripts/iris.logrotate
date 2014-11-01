@@ -1,0 +1,19 @@
+/var/log/iris/*.log {
+	daily
+	missingok
+	rotate 65
+	compress
+	delaycompress
+	notifempty
+	create 644 iris adm
+	sharedscripts
+	prerotate
+		if [ -d /etc/logrotate.d/iris-prerotate ]; then \
+			run-parts /etc/logrotate.d/iris-prerotate; \
+		fi; \
+	endscript
+	postrotate
+		invoke-rc.d iris logrotate >/dev/null 2>&1 || true
+	endscript
+}
+

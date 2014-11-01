@@ -1,0 +1,251 @@
+iris (0.1.17) unstable; urgency=low
+
+  * Memory allocators
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Tue,  8 Oct 2014 16:30:00 +0400
+
+iris (0.1.16) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Tue, 29 Jul 2014 21:13:00 +0400
+
+iris (0.1.15) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Thu,  3 Jul 2014 19:18:00 +0400
+
+iris (0.1.14) unstable; urgency=low
+
+  * SSL/TLS multithread fix
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Thu,  5 Jun 2014 16:06:00 +0400
+
+iris (0.1.13) unstable; urgency=low
+
+  * Debugging package
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Tue, 20 May 2014 18:03:00 +0400
+
+iris (0.1.12) unstable; urgency=low
+
+  * Unicode utils fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Thu, 15 May 2014 14:11:00 +0400
+
+iris (0.1.11) unstable; urgency=low
+
+  * Includes in config files
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Fri, 18 Apr 2014 21:56:00 +0400
+
+iris (0.1.10) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Fri, 10 Jan 2014 18:51:00 +0400
+
+iris (0.1.9) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Mon, 23 Dec 2013 19:57:00 +0400
+
+iris (0.1.8) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Mon, 16 Dec 2013 03:59:00 +0400
+
+iris (0.1.7) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Mon,  9 Dec 2013 23:39:00 +0400
+
+iris (0.1.6) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Sat,  7 Dec 2013  0:20:00 +0400
+
+iris (0.1.5) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Tue,  3 Dec 2013 14:28:00 +0400
+
+iris (0.1.4) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Sun,  1 Dec 2013 21:41:00 +0400
+
+iris (0.1.3) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Fri, 18 Oct 2013 14:14:00 +0400
+
+iris (0.1.2) unstable; urgency=low
+
+  * Switch do DEBUG priority by SIGUSR2 signal
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Thu, 10 Oct 2013 18:40:00 +0400
+
+iris (0.1.1) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Wed,  9 Oct 2013 13:05:00 +0400
+
+iris (0.1.0) unstable; urgency=low
+
+  * SSL support
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Fri,  4 Oct 2013 15:08:00 +0400
+
+iris (0.0.30) unstable; urgency=low
+
+  * New class: LineBuffer 
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Tue, 17 Sep 2013 20:46:00 +0400
+
+iris (0.0.29) unstable; urgency=low
+
+  * API fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Tue, 10 Sep 2013 20:01:00 +0400
+
+iris (0.0.28) unstable; urgency=low
+
+  * VariantVC improvements
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Fri, 15 Aug 2013 20:29:00 +0400
+
+iris (0.0.27) unstable; urgency=low
+
+  * Namespace MAIL -> namespace IRIS
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Thu, 15 Aug 2013 19:53:00 +0400
+
+iris (0.0.24) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Fri,  9 Aug 2013 18:45:00 +0400
+
+iris (0.0.22) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Thu,  8 Aug 2013 14:30:00 +0400
+
+iris (0.0.21) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Fri,  2 Aug 2013 17:35:00 +0400
+
+iris (0.0.20) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Thu, 18 Jul 2013 20:38:00 +0400
+
+iris (0.0.16) unstable; urgency=low
+
+  * Mutex MultiLocker class
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Fri, 12 Jul 2013 15:22:00 +0400
+
+iris (0.0.15) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Tue,  2 Jul 2013 20:33:00 +0400
+
+iris (0.0.14) unstable; urgency=low
+
+  * AllowConnect/DenyConnect for IPv4
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Wed, 26 Jun 2013 12:15:00 +0400
+
+iris (0.0.13) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Fri, 21 Jun 2013 14:01:00 +0400
+
+iris (0.0.12) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Thu, 13 Jun 2013 19:20:00 +0400
+
+iris (0.0.11) unstable; urgency=low
+
+  * Bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Fri,  7 Jun 2013 21:35:00 +0400
+
+iris (0.0.10) unstable; urgency=low
+
+  * ICP client bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Tue,  4 Jun 2013 18:35:00 +0400
+
+iris (0.0.9) unstable; urgency=low
+
+  * Logger bug fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Thu, 30 May 2013 14:42:00 +0400
+
+iris (0.0.8) unstable; urgency=low
+
+  * Package & test suite fixes
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Thu, 23 May 2013 20:09:00 +0400
+
+iris (0.0.7) unstable; urgency=low
+
+  * Logger subsystem
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Tue, 21 May 2013 19:59:00 +0400
+
+iris (0.0.6) unstable; urgency=low
+
+  * ICP handler & client library
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Fri, 17 May 2013 18:07:00 +0400
+
+iris (0.0.5) unstable; urgency=low
+
+  * Bump version
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Mon, 13 May 2013 18:27:00 +0400
+
+iris (0.0.4) unstable; urgency=low
+
+  * Extra debug info
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Fri, 26 Apr 2013 19:11:00 +0400
+
+iris (0.0.3) unstable; urgency=low
+
+  * Extra debug info
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Fri, 26 Apr 2013 15:01:00 +0400
+
+iris (0.0.2) unstable; urgency=low
+
+  * Network subsystem tests
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Wed, 24 Apr 2013 18:12:00 +0400
+
+iris (0.0.1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Andrey V. Shetukhin <stellar@communico.pro>  Fri,  5 Oct 2012 19:44:00 +0300

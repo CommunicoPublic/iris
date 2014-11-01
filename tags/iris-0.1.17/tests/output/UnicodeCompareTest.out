@@ -1,0 +1,68 @@
+Compare with case check:
+`foo` .LT. `foo1`
+`foo` .EQ. `foo`
+`Foo` .LT. `foO`
+`foo1` .GT. `foo`
+`абв` .LT. `абг`
+`абг` .GT. `абв`
+`Абв` .LT. `абв`
+`Абг` .LT. `аБв`
+Compare ignore case check:
+`foo` .LT. `foo1`
+`foo` .EQ. `foo`
+`Foo` .EQ. `foO`
+`foo1` .GT. `foo`
+`абв` .LT. `абг`
+`абг` .GT. `абв`
+`Абв` .EQ. `абв`
+`Абг` .GT. `аБв`
+Make strings uppercase:
+`1234567890abcdefghijklmnopqrstuvwxyz` -> `1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ`
+`1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ` -> `1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ`
+`1234567890АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ` -> `1234567890АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ`
+`1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюя` -> `1234567890АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ`
+`العربية` -> `العربية`
+`Žemaitėška` -> `ŽEMAITĖŠKA`
+`Català` -> `CATALÀ`
+`Español` -> `ESPAÑOL`
+`Français` -> `FRANÇAIS`
+`日本語` -> `日本語`
+`Lietuvių` -> `LIETUVIŲ`
+`Norsk (bokmål)` -> `NORSK (BOKMÅL)`
+`Português` -> `PORTUGUÊS`
+`Slovenčina` -> `SLOVENČINA`
+`Slovenščina` -> `SLOVENŠČINA`
+`Тоҷикӣ` -> `ТОҶИКӢ`
+`Türkçe` -> `TÜRKÇE`
+`Українська` -> `УКРАЇНСЬКА`
+`Vèneto` -> `VÈNETO`
+`Volapük` -> `VOLAPÜK`
+`Herzliche Grüße` -> `HERZLICHE GRÜßE`
+`Сердечный привет` -> `СЕРДЕЧНЫЙ ПРИВЕТ`
+`F��oo` -> `F��OO`
+`F��` -> `F��`
+Make strings lowercase:
+`1234567890abcdefghijklmnopqrstuvwxyz` -> `1234567890abcdefghijklmnopqrstuvwxyz`
+`1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ` -> `1234567890abcdefghijklmnopqrstuvwxyz`
+`1234567890АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ` -> `1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюя`
+`1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюя` -> `1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюя`
+`العربية` -> `العربية`
+`Žemaitėška` -> `žemaitėška`
+`Català` -> `català`
+`Español` -> `español`
+`Français` -> `français`
+`日本語` -> `日本語`
+`Lietuvių` -> `lietuvių`
+`Norsk (bokmål)` -> `norsk (bokmål)`
+`Português` -> `português`
+`Slovenčina` -> `slovenčina`
+`Slovenščina` -> `slovenščina`
+`Тоҷикӣ` -> `тоҷикӣ`
+`Türkçe` -> `türkçe`
+`Українська` -> `українська`
+`Vèneto` -> `vèneto`
+`Volapük` -> `volapük`
+`Herzliche Grüße` -> `herzliche grüße`
+`Сердечный привет` -> `сердечный привет`
+`F��oo` -> `f��oo`
+`F��` -> `f��`

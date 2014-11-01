@@ -1,0 +1,50 @@
+.TH "IRIS-SERVER-CTL" 8 "2013-04-03" "Iris SMTP/LMTP/POP3/IMAP4 server" "Iris SMTP/LMTP/POP3/IMAP4 server"
+
+.SH NAME
+iris\-server\-ctl \- Iris SMTP/LMTP/POP3/IMAP4 server contol interface
+.SH "SYNOPSIS"
+.PP
+\fBiris-server-ctl\fR \fIcommand\fR
+.SH "DESCRIPTION"
+.PP
+iris\-server\-ctl is a front end to the Iris SMTP/LMTP/POP3/IMAP4 server. It is useful tool for system administrators and helps control of functioning of iris\-server daemon\&.
+.SH "OPTIONS"
+The \fIcommand\fP can be any one or more of the following options:
+.TP
+.BI start
+Start the iris\-server daemon. Gives an error if it is already running.
+.TP
+.BI stop
+Stops the iris\-server daemon by sending \fITERM\fP signal. This may take up to several minutes depending of number of connected clients.
+.TP
+.BI restart
+Combination of start and stop. If the daemon is not running, it is started. Before stopping iris\-server configuration will be check. Gives an error if configuration is broken.
+.TP
+.BI configtest
+Tests configuration of iris\-server. Gives an error if configuration is broken.
+On success prints \fBSyntax Ok\fP.
+.TP
+.BI logreopen
+Re-open server logs by sending \fIUSR1\fP signal.
+.TP
+.BI destroy
+Stops the iris\-server daemon by sending \fIINT\fP signal. This is potentially harmful option and should not be used usually.
+.TP
+.BI help
+Displays a short help message.
+.SH AUTHOR
+Written by Communico, LLC.
+.SH "REPORTING BUGS"
+Report ls bugs to iris\-bugs@communico.pro
+.br
+Iris home page: <http://www.communico.pro/iris/>
+.SH COPYRIGHT
+Copyright \(co 2013 Iris Dev. team. All rights reserved.
+.br
+License: see <http://www.communico.pro/license/>.
+.SH SEE ALSO
+.BR iris\-config\-parser (8),
+.BR iris\-config\-test (8),
+.BR iris\-server (8),
+.BR /usr/share/doc/iris-0.0-core/README.Debian.gz
+.

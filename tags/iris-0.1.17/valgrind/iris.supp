@@ -1,0 +1,31 @@
+{
+   LibEv
+   Memcheck:Leak
+   fun:malloc
+   fun:realloc
+   obj:/usr/lib/libev.so.4.0.0
+   fun:ev_loop_destroy
+}
+
+{
+   DLClose
+   Memcheck:Leak
+   fun:calloc
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+}
+
+{
+   SSLCore
+   Memcheck:Leak
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:sk_new
+   fun:load_builtin_compressions
+   fun:SSL_COMP_get_compression_methods
+   fun:SSL_library_init
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS11MainProcessC1ERNS_13SignalHandlerERNS_13GlobalContextE
+   fun:main
+}
+

@@ -1,0 +1,121 @@
+Source: iris
+Section: mail
+Priority: optional
+Maintainer: Andrey V. Shetukhin <stellar@communico.pro>
+Build-Depends: debhelper (>= 5),
+	       libssl-dev (>= 0.9.7),
+               libev-dev (>= 4.0),
+               uuid-dev (>= 2.20.1),
+               ragel (>=6.0),
+               cmake (>= 2.8.0),
+               lsb-release
+Standards-Version: 3.9.5
+Homepage: http://www.communico.pro/iris/
+Vcs-Browser: http://svn.communico.pro/websvn/listing.php?repname=iris
+Vcs-Svn: http://svn.communico.pro/svn/iris/
+
+Package: iris-server0.1
+Architecture: any
+Pre-Depends: adduser (>= 3.40)
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libiris-core0.1 (= ${binary:Version}),
+         iris-configs0.1 (= ${binary:Version}),
+         iris-logger0.1 | iris-file-logger0.1 (= ${binary:Version}),
+         iris-handler0.1 | iris-echo-handler0.1 (= ${binary:Version}),
+         lsb-base (>= 3.2-13)
+Description: Iris multi-purpose TCP server
+ Iris is all-in-one solution for mass mail hosting written in C++.
+ The main goals of Iris are high speed, linear scalability up to
+ 100 millions user accounts and ease of use.
+ .
+ This package includes server binary.
+
+Package: libiris-core0.1
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: Iris common libraries
+ Iris is all-in-one solution for mass mail hosting written in C++.
+ The main goals of Iris are high speed, linear scalability up to
+ 100 millions user accounts and ease of use.
+ .
+ This package includes common libraries.
+
+Package: iris-configs0.1
+Architecture: any
+Depends: ${misc:Depends},
+         ucf
+Description: Iris configuration files
+ Iris is all-in-one solution for mass mail hosting written in C++.
+ The main goals of Iris are high speed, linear scalability up to
+ 100 millions user accounts and ease of use.
+ .
+ This package includes configuration files.
+
+Package: iris-cli0.1
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         iris-server0.1 (>= ${binary:Version}),
+         iris-configs0.1 (>= ${binary:Version}),
+         libiris-core0.1 (>= ${binary:Version})
+Description: Iris command-line utilities
+ Iris is all-in-one solution for mass mail hosting written in C++.
+ The main goals of Iris are high speed, linear scalability up to
+ 100 millions user accounts and ease of use.
+ .
+ This package includes command-line utilities.
+
+Package: iris-dev
+Section: libdevel
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         iris-cli0.1 (>= ${source:Version}),
+         libiris-core0.1 (= ${binary:Version}),
+Description: Iris header files and documentation
+ Iris is all-in-one solution for mass mail hosting written in C++.
+ The main goals of Iris are high speed, linear scalability up to
+ 100 millions user accounts and ease of use.
+ .
+ This package includes header files and documentation.
+
+Package: iris-server0.1-dbg
+Section: libdevel
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         iris-server0.1 (>= ${source:Version}),
+         iris-cli0.1 (>= ${source:Version}),
+         libiris-core0.1 (= ${binary:Version}),
+Description: Iris debugging symbols
+ Iris is all-in-one solution for mass mail hosting written in C++.
+ The main goals of Iris are high speed, linear scalability up to
+ 100 millions user accounts and ease of use.
+ .
+ This package includes Iris debugging symbols.
+
+Package: iris-file-logger0.1
+Provides: iris-logger0.1
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: File logger for Iris server
+ Iris is all-in-one solution for mass mail hosting written in C++.
+ The main goals of Iris are high speed, linear scalability up to
+ 100 millions user accounts and ease of use.
+ .
+ This package includes file logger module.
+
+Package: iris-echo-handler0.1
+Provides: iris-handler0.1
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: Example protocol module for Iris server
+ Iris is all-in-one solution for mass mail hosting written in C++.
+ The main goals of Iris are high speed, linear scalability up to
+ 100 millions user accounts and ease of use.
+ .
+ This package includes echo protocol module.

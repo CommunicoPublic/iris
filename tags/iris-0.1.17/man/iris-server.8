@@ -1,0 +1,92 @@
+.TH "IRIS-SERVER" 8 "2013-04-03" "Iris TCP server" "Iris TCP server"
+
+.SH NAME
+iris\-server \- Iris TCP server
+.SH "SYNOPSIS"
+.PP
+\fBiris\-server\fR [ \-\fBf\fR \fIconfig\fR ] [ \-\fBh\fR ] [ \-\fBv\fR ] [ \-\fBV\fR ] [ \-\fBd\fR ] [ \-\fBF\fR ]
+.SH "SUMMARY"
+.PP
+iris\-server is an highperformance TCP framework solution with SSL/TLS support\&. It is designed to be run as a standalone daemon process\&. When used like this it will create several pools of threads to handle requests\&.
+.PP
+In general, iris\-server should not be invoked directly, but rather should be
+invoked via /etc/init.d/iris\-server or iris\-server\-ctl\&. The default Debian
+configuration requires environment variables that are defined in
+/etc/iris\-server/envvars and are not available if iris\-server is started directly.
+.SH "DOCUMENTATION"
+.PP
+The full documentation is available in the iris\-doc package or at
+<http://www.communico.pro/iris/0.1/>. Information about Debian specific changes
+and configuration can be found in
+/usr/share/doc/iris\-0.1\-core/README.Debian.gz .
+.SH "OPTIONS"
+.TP
+\fB\-f\fR \fIconfig\fR
+Use specified configuration file on startup\&. If not set, Iris will use \fIIRIS_CONFIG_FILE\fR environment variable to search config file. The default is /etc/iris\-server/iris\-server\&.conf\&.
+.TP
+\fB\-h\fR
+Output a short summary of available command line options\&.
+.TP
+\fB\-v\fR
+Print the version of iris-server, and then exit\&.
+.TP
+\fB\-V\fR
+Print the version and build parameters of iris\-server, and then exit\&.
+.TP
+\fB\-d\fR
+Run iris\-server in debug mode\&.
+.TP
+\fB\-F\fR
+Don't detach from console when running\&.
+.SH SIGNALS
+The signals listed below may be sent with kill (1) to iris\-server process.
+.TP
+\fBINT\fR
+iris\-server will exit immediately without committing transactions and closing files. This is potentially harmful and may corrupt data files.
+.TP
+\fBTERM\fR
+iris\-server will shut down all listeners, ensure that all transactions are committed and all files are closed and then exit.
+.TP
+\fBPIPE\fR
+Ignore it.
+.TP
+\fBHUP\fR
+Switch log level in runtime from current level to DEBUG and back.
+.TP
+\fBUSR1\fR, \fBUSR2\fR
+iris\-server will reopen all log files. This is useful for log rotation.
+.SH "EXIT CODES"
+.TP
+EX_OK
+if OK,
+.TP
+EX_USAGE
+if iris\-server was started the wrong number of arguments, a bad flag, a bad syntax in a parameter, or whatever.
+.TP
+EX_SOFTWARE
+if an internal software error has been detected.
+.TP
+EX_CONFIG
+if configuration file is broken or contains incorrect parameters
+.SH ENVIRONMENT
+.TP
+\fBIRIS_CONFIG_FILE\fR
+Configuration file for iris. Overrides command\-line arument.
+.SH AUTHOR
+Written by Communico, LLC.
+.SH "REPORTING BUGS"
+Report all bugs to iris\-bugs@communico.pro
+.br
+Iris home page: <http://www.communico.pro/iris/>
+.SH COPYRIGHT
+Copyright \(co 2013-2014 Iris Dev. team. All rights reserved.
+.br
+License: see <http://www.communico.pro/license/>.
+.SH SEE ALSO
+.BR iris\-config\-parser (8),
+.BR iris\-config\-test (8),
+.BR iris\-server\-ctl (8),
+.BR /usr/share/doc/iris\-0.1\-core/README.Debian.gz,
+.BR kill (1),
+.BR /usr/include/sysexits.h
+.

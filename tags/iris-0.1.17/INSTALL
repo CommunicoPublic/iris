@@ -1,0 +1,33 @@
+INSTALLATION INTRODUCTION
+-------------------------
+
+ This file describes how to compile and install Iris on your
+ system.
+
+REQUIREMENTS
+------------
+
+  * ANSI C++ compiler with STL support
+  * CMake building system (http://www.cmake.org/)
+  * Ragel State Machine Compiler (http://www.complang.org/ragel/)
+  * LibEv event loop library (http://software.schmorp.de/pkg/libev.html)
+  * Libuud library, used to generate unique identifiers for objects
+
+  For most systems, execute the following to compile and install Iris:
+
+  cmake .
+  make
+  make install
+
+  If you want to run tests, execute "make test" command.
+
+  To clean package, run "./ClearPackage.sh" script.
+
+CONFIGURATION OPTIONS
+---------------------
+
+  DEBUG_MODE - enable/disable debug output
+  ENABLE_OPTIMIZATION - enable/disable optimization (gcc only)
+  SKIP_RELINK_RPATH - skip relinking and full RPATH for the install tree
+  ENABLE_TEST_COVERAGE -enable/disable test coverage (gcc only)
+

@@ -1,0 +1,10 @@
+usr/bin/iris-config
+usr/include/*
+usr/lib/libiris-conf.so
+usr/lib/libiris-core.so
+usr/lib/libiris-ev.so
+usr/lib/libiris-mt.so
+usr/lib/libiris-net.so
+usr/lib/libiris-net-ssl.so
+usr/lib/libiris-util.so
+usr/share/man/man8/iris-config.8
