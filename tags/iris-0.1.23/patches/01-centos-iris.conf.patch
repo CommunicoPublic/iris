@@ -1,0 +1,22 @@
+--- iris-0.1.19/conf/iris.conf.orig	2015-03-09 20:20:41.900886800 +0300
++++ iris-0.1.19/conf/iris.conf	2015-03-09 20:21:19.819884305 +0300
+@@ -28,16 +28,16 @@
+ Module Main
+ {
+ 	# Include directories
+-	IncludeDirs       /etc/iris /usr/local/etc/iris;
++	IncludeDirs       /etc/iris;
+ 
+ 	# Directory that contains dynamic loadable modules
+-	LibexecDirs       . /usr/local/libexec/iris /usr/lib/iris;
++	LibexecDirs       . /usr/lib/iris /usr/lib64/iris;
+ 
+ 	# Available interfaces
+ 	Services          Echo EchoSSL;
+ 
+ 	# Pid file
+-	PidFile           /var/run/iris.pid;
++	PidFile           /var/run/iris/iris.pid;
+ 
+ 	# User and group
+ 	UserGroup         iris;

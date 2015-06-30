@@ -1,0 +1,104 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# Sample debian/rules that uses debhelper.
+# This file was originally written by Joey Hess and Craig Small.
+# As a special exception, when this file is copied by dh-make into a
+# dh-make output file, you may use that output file without restriction.
+# This special exception was added by Craig Small in version 0.37 of dh-make.
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+DISTRIBUTION = $(shell lsb_release -i -s)
+
+CFLAGS = -Wall -g
+
+ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
+	CFLAGS += -O0
+else
+	CFLAGS += -O3
+endif
+
+configure: configure-stamp
+configure-stamp:
+	dh_testdir
+	# Add here commands to configure the package.
+	cmake -DSKIP_RELINK_RPATH=ON . -DCMAKE_INSTALL_PREFIX=/usr -DCFLAGS="${CFLAGS}" -DCXXFLAGS="${CXXFLAGS}"
+	touch configure-stamp
+
+build: build-arch build-indep
+build-arch: build-stamp
+build-indep: build-stamp
+
+build-stamp: configure-stamp
+	dh_testdir
+	# Add here commands to compile the package.
+	$(MAKE)
+	touch $@
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp configure-stamp
+	# Add here commands to clean up after the build process.
+	/bin/sh ClearPackage.sh
+	dh_clean
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_prep
+	dh_installdirs
+	$(MAKE) DESTDIR=$(CURDIR)/debian/tmp install
+	install -m 755 $(CURDIR)/scripts/iris.init $(CURDIR)/debian/iris-server0.1.iris.init
+	install -m 644 $(CURDIR)/scripts/iris.logrotate $(CURDIR)/debian/iris-server0.1.iris-server.logrotate
+	install -D -m 644 $(CURDIR)/conf/iris.conf $(CURDIR)/debian/iris-server0.1/etc/iris
+	install -D -d $(CURDIR)/debian/iris-server0.1/etc/iris/conf.d
+	install -D -d $(CURDIR)/debian/iris-server0.1/etc/iris/handlers.d
+	install -D -d $(CURDIR)/debian/iris-server0.1/etc/iris/loggers.d
+	install -D -d $(CURDIR)/debian/iris-server0.1/etc/iris/services.d
+	install -D -m 644 $(CURDIR)/conf/loggers.d/general-logger.conf $(CURDIR)/debian/iris-file-logger0.1/etc/iris/loggers.d/general-logger.conf
+	install -D -m 644 $(CURDIR)/conf/loggers.d/syslog-logger.conf $(CURDIR)/debian/iris-syslog-logger0.1/etc/iris/loggers.d/syslog-logger.conf
+	install -D -m 644 $(CURDIR)/conf/handlers.d/echo-handler.conf $(CURDIR)/debian/iris-echo-handler0.1/etc/iris/handlers.d/echo-handler.conf
+	install -D -m 644 $(CURDIR)/conf/services.d/echo-service.conf $(CURDIR)/debian/iris-echo-handler0.1/etc/iris/services.d/echo-service.conf
+	install -D -m 644 $(CURDIR)/conf/services.d/echo-ssl-service.conf $(CURDIR)/debian/iris-echo-handler0.1/etc/iris/services.d/echo-ssl-service.conf
+	install -D -m 644 $(CURDIR)/ssl/ssl-cert-snakeoil.key $(CURDIR)/debian/iris-server0.1/etc/iris/ssl
+	install -D -m 644 $(CURDIR)/ssl/ssl-cert-snakeoil.pem $(CURDIR)/debian/iris-server0.1/etc/iris/ssl
+	install -D -m 644 debian/iris-server0.1.ufw.profile $(CURDIR)/debian/iris-server0.1/etc/ufw/applications.d/iris-server0.1
+	install -D -m 644 debian/apparmor-profile $(CURDIR)/debian/iris-server0.1/etc/apparmor.d/usr.sbin.iris-server
+
+# Build architecture-independent files here.
+binary-indep: build install
+# We have nothing to do by default.
+
+# Build architecture-dependent files here.
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs -a
+	dh_installdocs -a
+	dh_installexamples -a
+	if [ "$(DISTRIBUTION)" = "Ubuntu" ]; then \
+		dh_apparmor -piris-server0.1 --profile-name=usr.sbin.iris-server; \
+	fi
+	dh_install -a --sourcedir=$(CURDIR)/debian/tmp
+	dh_installlogrotate --name=iris-server
+	dh_installdebconf
+	dh_installinit --no-start --no-restart-on-upgrade --name=iris -- defaults 90 09
+	dh_installman -a
+	dh_link -a
+	dpkg-gensymbols -plibiris-core0.1 -Odebian/libiris-core0.1.symbols -edebian/libiris-core0.1/usr/lib/*
+	dh_strip -plibiris-core0.1 --dbg-package=iris-server0.1-dbg
+	dh_strip -piris-server0.1 --dbg-package=iris-server0.1-dbg
+	dh_strip -piris-cli0.1 --dbg-package=iris-server0.1-dbg
+	dh_compress -a
+	dh_fixperms -a
+	dh_makeshlibs -a -V
+	dh_installdeb -a
+	dh_shlibdeps -a -V
+	dh_gencontrol -a
+	dh_md5sums -a
+	dh_builddeb -a
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install configure

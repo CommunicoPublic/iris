@@ -1,0 +1,55 @@
+# vim:syntax=apparmor
+# Last Modified: Fri May 17 28:06:00 2013
+#include <tunables/global>
+
+/usr/sbin/iris-server {
+  #include <abstractions/base>
+  #include <abstractions/nameservice>
+  #include <abstractions/user-tmp>
+  #include <abstractions/ssl_certs>
+
+  deny /root/** rw,
+
+  capability dac_override,
+  capability net_bind_service,
+  capability sys_resource,
+  capability setgid,
+  capability setuid,
+  capability chown,
+
+  network,
+
+  /usr/lib/ssl/openssl.cnf r,
+  /etc/ldap/** r,
+  /etc/ssl/openssl.cnf r,
+  /etc/ssl/private/ r,
+  /etc/ssl/private/* r,
+
+  /etc/iris* r,
+  /etc/iris/** r,
+  /usr/lib/iris/ r,
+  /usr/lib/iris/*.so* mr,
+  /usr/sbin/iris-server mr,
+  /usr/share/iris/** r,
+  /var/log/iris/ rw,
+  /var/log/iris/** rwklm,
+  /{,var/}run/iris*.pid lrw,
+  /var/lib/iris/ rw,
+  /var/lib/iris/** rwklm,
+  /var/cache/iris/ rw,
+  /var/cache/iris/** rw,
+  /sys/devices/system/cpu/ r,
+
+  # gssapi
+  /etc/krb5.keytab kr,
+  /etc/bind/krb5.keytab kr,
+
+  /var/tmp/ rw,
+  /var/tmp/** rwk,
+
+  /opt/ rw,
+  /opt/** rwklm,
+
+  # Site-specific additions and overrides. See local/README for details.
+  #include <local/usr.sbin.iris-server>
+}

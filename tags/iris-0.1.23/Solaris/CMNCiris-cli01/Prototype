@@ -1,0 +1,9 @@
+i pkginfo
+i checkinstall
+i depend
+d none bin 0755 root bin
+f none bin/iris-config-parser 0755 root root
+d none share 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/iris-config-parser.1 0644 root root

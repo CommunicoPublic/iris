@@ -1,0 +1,1304 @@
+{
+   OPENSSL_config14
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:BUF_strndup
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:CONF_module_add
+   fun:OPENSSL_load_builtin_modules
+   fun:OPENSSL_config
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+   fun:_ZN4IRIS11MainProcess3RunEv
+}
+
+{
+   OPENSSL_config13
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:BUF_strndup
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:CONF_module_add
+   fun:OPENSSL_config
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+   fun:_ZN4IRIS11MainProcess3RunEv
+   fun:main
+}
+
+{
+   OPENSSL_config12
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ENGINE_new
+   fun:ENGINE_load_rsax
+   fun:ENGINE_load_builtin_engines
+   fun:OPENSSL_config
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   OPENSSL_config11
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ENGINE_new
+   fun:ENGINE_load_rsax
+   fun:ENGINE_load_builtin_engines
+   fun:OPENSSL_config
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+}
+
+{
+   OPENSSL_config10
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_get_state
+   fun:ERR_clear_error
+   fun:ENGINE_load_builtin_engines
+   fun:OPENSSL_config
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   OPENSSL_config9
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:BIO_set
+   fun:BIO_new
+   fun:BIO_new_file
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:CONF_modules_load_file
+   fun:OPENSSL_config
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+}
+
+{
+   OPENSSL_config8
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:BIO_set
+   fun:BIO_new
+   fun:BIO_new_file
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:CONF_modules_load_file
+   fun:OPENSSL_config
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+}
+
+{
+   SSL_CTX_new10
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:SSL_get_ex_data_X509_STORE_CTX_idx
+   fun:SSL_CTX_new
+   fun:_ZN4IRIS7SSLCore10AddContextERKSsS2_S2_S2_S2_bbRNS_6LoggerE
+   fun:_ZN4IRIS19AcceptSignalWatcher8SetupSSLEv
+   fun:_ZN4IRIS16AcceptLoopWorker3RunEv
+   fun:_ZN4IRIS11ThreadGroupINS_16AcceptLoopWorkerEE16ThreadWorkerFuncEPv
+   fun:start_thread
+   fun:clone
+}
+
+{
+   SSL_CTX_new9
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:SSL_get_ex_data_X509_STORE_CTX_idx
+   fun:SSL_CTX_new
+   fun:_ZN4IRIS7SSLCore10AddContextERKSsS2_S2_S2_S2_bbRNS_6LoggerE
+   fun:_ZN4IRIS19AcceptSignalWatcher8SetupSSLEv
+   fun:_ZN4IRIS16AcceptLoopWorker3RunEv
+   fun:_ZN4IRIS11ThreadGroupINS_16AcceptLoopWorkerEE16ThreadWorkerFuncEPv
+   fun:start_thread
+}
+
+{
+   SSL_CTX_new8
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:X509_STORE_new
+   fun:SSL_CTX_new
+   fun:_ZN4IRIS7SSLCore10AddContextERKSsS2_S2_S2_S2_bbRNS_6LoggerE
+   fun:_ZN4IRIS19AcceptSignalWatcher8SetupSSLEv
+   fun:_ZN4IRIS16AcceptLoopWorker3RunEv
+   fun:_ZN4IRIS11ThreadGroupINS_16AcceptLoopWorkerEE16ThreadWorkerFuncEPv
+   fun:start_thread
+   fun:clone
+}
+
+{
+   SSL_CTX_new7
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:X509_STORE_new
+   fun:SSL_CTX_new
+   fun:_ZN4IRIS7SSLCore10AddContextERKSsS2_S2_S2_S2_bbRNS_6LoggerE
+   fun:_ZN4IRIS19AcceptSignalWatcher8SetupSSLEv
+   fun:_ZN4IRIS16AcceptLoopWorker3RunEv
+   fun:_ZN4IRIS11ThreadGroupINS_16AcceptLoopWorkerEE16ThreadWorkerFuncEPv
+   fun:start_thread
+}
+
+{
+   SSL_CTX_new6
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:SSL_CTX_new
+   fun:_ZN4IRIS7SSLCore10AddContextERKSsS2_S2_S2_S2_bbRNS_6LoggerE
+   fun:_ZN4IRIS19AcceptSignalWatcher8SetupSSLEv
+   fun:_ZN4IRIS16AcceptLoopWorker3RunEv
+   fun:_ZN4IRIS11ThreadGroupINS_16AcceptLoopWorkerEE16ThreadWorkerFuncEPv
+   fun:start_thread
+   fun:clone
+}
+
+{
+   SSL_CTX_new5
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:SSL_CTX_new
+   fun:_ZN4IRIS7SSLCore10AddContextERKSsS2_S2_S2_S2_bbRNS_6LoggerE
+   fun:_ZN4IRIS19AcceptSignalWatcher8SetupSSLEv
+   fun:_ZN4IRIS16AcceptLoopWorker3RunEv
+   fun:_ZN4IRIS11ThreadGroupINS_16AcceptLoopWorkerEE16ThreadWorkerFuncEPv
+   fun:start_thread
+   fun:clone
+}
+
+{
+   SSL_CTX_use_certificate_chain_file4
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ASN1_item_ex_d2i
+   fun:ASN1_item_d2i
+   fun:d2i_X509_AUX
+   fun:PEM_ASN1_read_bio
+   fun:SSL_CTX_use_certificate_chain_file
+   fun:_ZN4IRIS7SSLCore10AddContextERKSsS2_S2_S2_S2_bbRNS_6LoggerE
+}
+
+{
+   SSL_CTX_use_certificate_chain_file3
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ASN1_item_ex_d2i
+   fun:ASN1_item_d2i
+   fun:d2i_X509_AUX
+   fun:PEM_ASN1_read_bio
+   fun:SSL_CTX_use_certificate_chain_file
+}
+
+{
+   RSA_new_method2
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:RSA_new_method
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ASN1_item_ex_d2i
+   fun:ASN1_item_d2i
+}
+
+{
+   RSA_new_method1
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:RSA_new_method
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ASN1_item_ex_d2i
+}
+
+{
+   DH_new_method2
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:DH_new_method
+   fun:_ZN4IRIS7SSLCore10AddContextERKSsS2_S2_S2_S2_bbRNS_6LoggerE
+   fun:_ZN4IRIS19AcceptSignalWatcher8SetupSSLEv
+   fun:_ZN4IRIS16AcceptLoopWorker3RunEv
+   fun:_ZN4IRIS11ThreadGroupINS_16AcceptLoopWorkerEE16ThreadWorkerFuncEPv
+   fun:start_thread
+   fun:clone
+}
+
+{
+   DH_new_method1
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:DH_new_method
+   fun:_ZN4IRIS7SSLCore10AddContextERKSsS2_S2_S2_S2_bbRNS_6LoggerE
+   fun:_ZN4IRIS19AcceptSignalWatcher8SetupSSLEv
+   fun:_ZN4IRIS16AcceptLoopWorker3RunEv
+   fun:_ZN4IRIS11ThreadGroupINS_16AcceptLoopWorkerEE16ThreadWorkerFuncEPv
+   fun:start_thread
+   fun:clone
+}
+
+{
+   _dlerror_run1
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   fun:_ZN4IRIS6LoaderINS_6ObjectEE13DoLoadLibraryEPKc
+   fun:_ZN4IRIS6LoaderINS_6ObjectEE9GetObjectEPKcS4_
+   fun:_ZN4IRIS11MainProcess10LoadModuleERKSsS2_S2_S2_RKNS_12BasicVariantINS_9NoCaseCmpEEERKSt6vectorISsSaISsEERNS_6LoggerE
+   fun:_ZN4IRIS11MainProcess5SetupERNS_6LoggerERb
+   fun:main
+}
+
+{
+   OPENSSL_config7
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:sk_new
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:CONF_module_add
+   fun:OPENSSL_load_builtin_modules
+   fun:OPENSSL_config
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+   fun:_ZN4IRIS11MainProcess3RunEv
+}
+
+{
+   OPENSSL_config6
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:sk_new
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ENGINE_new
+   fun:ENGINE_load_rsax
+   fun:ENGINE_load_builtin_engines
+   fun:OPENSSL_config
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+}
+
+{
+   BIO_new_file1
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:sk_new
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:BIO_set
+   fun:BIO_new
+   fun:BIO_new_file
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:CONF_modules_load_file
+   fun:OPENSSL_config
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+}
+
+{
+   SSL_library_init1
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:sk_new
+   obj:/lib/x86_64-linux-gnu/libssl.so.1.0.0
+   fun:SSL_COMP_get_compression_methods
+   fun:SSL_library_init
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+   fun:_ZN4IRIS11MainProcess3RunEv
+   fun:main
+}
+
+{
+   SSL_CTX_new4
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:sk_new
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:SSL_get_ex_data_X509_STORE_CTX_idx
+   fun:SSL_CTX_new
+   fun:_ZN4IRIS7SSLCore10AddContextERKSsS2_S2_S2_S2_bbRNS_6LoggerE
+   fun:_ZN4IRIS19AcceptSignalWatcher8SetupSSLEv
+   fun:_ZN4IRIS16AcceptLoopWorker3RunEv
+   fun:_ZN4IRIS11ThreadGroupINS_16AcceptLoopWorkerEE16ThreadWorkerFuncEPv
+   fun:start_thread
+}
+
+{
+   SSL_CTX_new3
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:sk_new
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:X509_STORE_new
+   fun:SSL_CTX_new
+   fun:_ZN4IRIS7SSLCore10AddContextERKSsS2_S2_S2_S2_bbRNS_6LoggerE
+   fun:_ZN4IRIS19AcceptSignalWatcher8SetupSSLEv
+   fun:_ZN4IRIS16AcceptLoopWorker3RunEv
+   fun:_ZN4IRIS11ThreadGroupINS_16AcceptLoopWorkerEE16ThreadWorkerFuncEPv
+   fun:start_thread
+}
+
+{
+   SSL_CTX_new2
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:sk_new
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:SSL_CTX_new
+   fun:_ZN4IRIS7SSLCore10AddContextERKSsS2_S2_S2_S2_bbRNS_6LoggerE
+   fun:_ZN4IRIS19AcceptSignalWatcher8SetupSSLEv
+   fun:_ZN4IRIS16AcceptLoopWorker3RunEv
+   fun:_ZN4IRIS11ThreadGroupINS_16AcceptLoopWorkerEE16ThreadWorkerFuncEPv
+   fun:start_thread
+   fun:clone
+}
+
+{
+   SSL_CTX_use_certificate_chain_file2
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:sk_new
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ASN1_item_ex_d2i
+   fun:ASN1_item_d2i
+   fun:d2i_X509_AUX
+   fun:PEM_ASN1_read_bio
+   fun:SSL_CTX_use_certificate_chain_file
+}
+
+{
+   ASN1_item_ex_d2i1
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:sk_new
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:RSA_new_method
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ASN1_item_ex_d2i
+}
+
+{
+   DH_new_method1
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:sk_new
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:DH_new_method
+   fun:_ZN4IRIS7SSLCore10AddContextERKSsS2_S2_S2_S2_bbRNS_6LoggerE
+   fun:_ZN4IRIS19AcceptSignalWatcher8SetupSSLEv
+   fun:_ZN4IRIS16AcceptLoopWorker3RunEv
+   fun:_ZN4IRIS11ThreadGroupINS_16AcceptLoopWorkerEE16ThreadWorkerFuncEPv
+   fun:start_thread
+   fun:clone
+}
+
+{
+   SSL_CTX_new1
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:SSL_get_ex_data_X509_STORE_CTX_idx
+   fun:SSL_CTX_new
+   fun:_ZN4IRIS7SSLCore10AddContextERKSsS2_S2_S2_S2_bbRNS_6LoggerE
+   fun:_ZN4IRIS19AcceptSignalWatcher8SetupSSLEv
+   fun:_ZN4IRIS16AcceptLoopWorker3RunEv
+   fun:_ZN4IRIS11ThreadGroupINS_16AcceptLoopWorkerEE16ThreadWorkerFuncEPv
+   fun:start_thread
+   fun:clone
+}
+
+{
+   ASN1_item_d2i
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:RSA_new_method
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ASN1_item_ex_d2i
+   fun:ASN1_item_d2i
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+}
+
+{
+   OPENSSL_config5
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:CONF_module_add
+   fun:OPENSSL_load_builtin_modules
+   fun:OPENSSL_config
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+   fun:_ZN4IRIS11MainProcess3RunEv
+   fun:main
+}
+
+{
+   OPENSSL_config4
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:CONF_module_add
+   fun:OPENSSL_config
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+   fun:_ZN4IRIS11MainProcess3RunEv
+   fun:main
+}
+
+{
+   SSL_load_error_strings37
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_ECDH_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings36
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_RAND_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings35
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_COMP_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings34
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_ECDSA_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings33
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_BUF_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings32
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_OBJ_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   OPENSSL_config3
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_new
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ENGINE_new
+   fun:ENGINE_load_rsax
+   fun:ENGINE_load_builtin_engines
+   fun:OPENSSL_config
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+}
+
+{
+   OPENSSL_config2
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_new
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_get_state
+   fun:ERR_clear_error
+   fun:ENGINE_load_builtin_engines
+   fun:OPENSSL_config
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+}
+
+{
+   SSL_load_error_strings31
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_new
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_ERR_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+}
+
+{
+   SSL_CTX_use_certificate_chain_file1
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_get_state
+   fun:ERR_clear_error
+   fun:SSL_CTX_use_certificate_chain_file
+   fun:_ZN4IRIS7SSLCore10AddContextERKSsS2_S2_S2_S2_bbRNS_6LoggerE
+   fun:_ZN4IRIS19AcceptSignalWatcher8SetupSSLEv
+   fun:_ZN4IRIS16AcceptLoopWorker3RunEv
+   fun:_ZN4IRIS11ThreadGroupINS_16AcceptLoopWorkerEE16ThreadWorkerFuncEPv
+   fun:start_thread
+}
+
+{
+   SSL_load_error_strings30
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_CRYPTO_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings29
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_UI_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings28
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_DH_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings27
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_OCSP_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings26
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_CONF_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   OPENSSL_config1
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:ERR_get_state
+   fun:ERR_clear_error
+   fun:ENGINE_load_builtin_engines
+   fun:OPENSSL_config
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+   fun:_ZN4IRIS11MainProcess3RunEv
+   fun:main
+}
+
+{
+   SSL_load_error_strings25
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_DSA_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings24
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_PKCS12_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings23
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_BIO_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings22
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_ERR_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings21
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_ENGINE_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings20
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_BN_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings19
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_PEM_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings18
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_PKCS7_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings16
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_X509_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings14
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_DSO_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings13
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_TS_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings11
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_RSA_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings9
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_X509V3_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings6
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_CMS_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+   fun:_ZN4IRIS11MainProcess3RunEv
+}
+
+{
+   SSL_load_error_strings5
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_EVP_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings4
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+   fun:_ZN4IRIS11MainProcess3RunEv
+   fun:main
+}
+
+{
+   SSL_load_error_strings2
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_ASN1_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_load_error_strings1
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+   fun:_ZN4IRIS11MainProcess3RunEv
+}
+
+{
+   SSL_load_error_strings0
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_EC_strings
+   fun:ERR_load_crypto_strings
+   fun:SSL_load_error_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+}
+
+{
+   SSL_CTX_use_certificate_chain_file
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:ERR_get_state
+   fun:ERR_clear_error
+   fun:SSL_CTX_use_certificate_chain_file
+   fun:_ZN4IRIS7SSLCore10AddContextERKSsS2_S2_S2_S2_bbRNS_6LoggerE
+   fun:_ZN4IRIS19AcceptSignalWatcher8SetupSSLEv
+   fun:_ZN4IRIS16AcceptLoopWorker3RunEv
+   fun:_ZN4IRIS11ThreadGroupINS_16AcceptLoopWorkerEE16ThreadWorkerFuncEPv
+   fun:start_thread
+   fun:clone
+}
+
+{
+   SSL_load_error_strings2
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_SSL_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+   fun:_ZN4IRIS11MainProcess3RunEv
+   fun:main
+}
+
+{
+   SSL_load_error_strings1
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:CRYPTO_malloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+   fun:_ZN4IRIS11MainProcess3RunEv
+   fun:main
+}
+
+{
+   ERR_load_SSL_strings0
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:realloc
+   fun:CRYPTO_realloc
+   fun:lh_insert
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   obj:/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+   fun:ERR_load_SSL_strings
+   fun:_ZN4IRIS7SSLCore10InitEngineEv
+   fun:_ZN4IRIS7SSLCoreC1Ev
+   fun:_ZN4IRIS19AcceptSignalWatcherC1ERNS_17AcceptLoopContextE
+   fun:_ZN4IRIS17AcceptLoopContextC1ERNS_15MainLoopContextE
+   fun:_ZN4IRIS11MainProcess3RunEv
+   fun:main
+}
+

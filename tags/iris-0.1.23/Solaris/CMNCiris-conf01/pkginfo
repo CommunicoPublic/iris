@@ -1,0 +1,13 @@
+ARCH=sparc
+BASEDIR=/opt/csw
+CATEGORY=system
+DESC=Iris TCP server example configuration files
+EMAIL=iris@commuico.pro
+HOTLINE=Please contact your local service provider
+MAXINST=1000
+NAME=iris-conf - Iris TCP server example configuration files
+PKG=CMNCiris-conf01
+VENDOR=Communico, LLC
+VERSION=0.1.23
+CLASSES=none
+

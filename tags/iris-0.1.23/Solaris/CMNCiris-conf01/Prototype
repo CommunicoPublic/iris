@@ -1,0 +1,18 @@
+i pkginfo
+i checkinstall
+d none share 0755 root bin
+d none share/iris 0755 root bin
+d none share/iris/conf 0755 root bin
+f none share/iris/conf/iris.conf 0644 root root
+d none share/iris/conf/handlers.d 0755 root bin
+f none share/iris/conf/handlers.d/echo-handler.conf 0644 root root
+d none share/iris/conf/loggers.d 0755 root bin
+f none share/iris/conf/loggers.d/general-logger.conf 0644 root root
+f none share/iris/conf/loggers.d/syslog-logger.conf 0644 root root
+d none share/iris/conf/services.d 0755 root bin
+f none share/iris/conf/services.d/echo-service.conf 0644 root root
+f none share/iris/conf/services.d/echo-ssl-service.conf 0644 root root
+d none share/iris/conf/ssl 0755 root bin
+f none share/iris/conf/ssl/dh1024.pem 0644 root root
+f none share/iris/conf/ssl/ssl-cert-snakeoil.key 0644 root root
+f none share/iris/conf/ssl/ssl-cert-snakeoil.pem 0644 root root

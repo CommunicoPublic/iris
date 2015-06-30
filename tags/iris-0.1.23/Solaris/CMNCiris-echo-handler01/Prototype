@@ -1,0 +1,6 @@
+i pkginfo
+i checkinstall
+i depend
+d none lib 0755 root bin
+d none lib/iris 0755 root bin
+f none lib/iris/mod_iris_echo.so 0755 root root

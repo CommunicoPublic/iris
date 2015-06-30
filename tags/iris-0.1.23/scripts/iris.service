@@ -1,0 +1,18 @@
+[Unit]
+Description=Iris TCP server
+After=syslog.target network.target
+
+[Service]
+Type=forking
+User=root
+Group=root
+
+PIDFile=/var/run/iris/iris.pid
+#ExecStartPre=/usr/libexec/iris-prepare-lib-dir %n
+ExecStart=/usr/sbin/iris-server -f /etc/iris/iris.conf
+#ExecStartPost=/usr/libexec/iris-wait-ready $MAINPID
+Restart=on-failure
+RestartSec=60s
+
+[Install]
+WantedBy=multi-user.target

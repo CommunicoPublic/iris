@@ -1,0 +1,10 @@
+P CMNCiris-server01        iris - Iris TCP server
+P CMNCiris-conf01          iris-conf - Iris TCP server configuration files
+P CMNClibiris-core01       libiris-core - Iris TCP server, core libraries
+P CSWlibev4                libev4 - A high performance event handling library, libev.so.4
+P CSWlibgcc-s1             libgcc_s1 - The GNU Compiler Collection, libgcc_s.so.1
+P CSWlibgccpp1             libgccpp1 - A garbage collector for C and C++, libgccpp.so.1
+P CSWlibssl1-0-0           libssl1_0_0 - Openssl 1.0 runtime libraries
+P CSWlibstdc++6            libstdc++6 - The GNU Compiler Collection, libstdc++.so.6
+P CSWlibuuid1              libuuid1 - Portable uuid C library, libuuid.so.1
+

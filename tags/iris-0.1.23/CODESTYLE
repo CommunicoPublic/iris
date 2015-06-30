@@ -1,0 +1,138 @@
+CODESTYLE -- Communico source file style guide. Based on FreeBSD style(9).
+
+This file describes coding rules for Communico header and source files.
+This is also a preferred style for source code of all applications written in C++.
+
+0.  The copyright header should be a multi-line comment, with the first line
+    of the comment having a dash after the star like so:
+
+    /*-
+     *  Copyright (c) Iris Dev. team. All rights reserved.
+     *  See http://www.communico.pro/license for details.
+     *
+     */
+
+1.  All classes, structures and data fields
+    MUST have auto-documentation in doxygen style
+    /**
+      @doxytag
+      @brief Auto-documentation for doxygen
+    */
+    class SomeClass
+    {
+    ....
+    };
+
+    /** @brief Some Variable */
+    INT_32 iSomeVariable;
+
+2.  Important and BIG comments SHOULD be in C-style
+
+    /*
+     * VERY Important single-line comment.
+     */
+
+    /*
+     * VERY BIG multi-line comment.
+     *
+     * When I was bound apprentice in famous Lincolnshire
+     * Full well I served my master for nigh on seven years
+     * Till I took up to poaching as you shall quickly hear
+     * Oh, 'tis my delight on a shiny night in the season of the year.
+     */
+
+3.  Single-line comments SHOULD be in C++ Style
+
+    // Single-line comment
+
+4.  NEVER use "standard" types. Use instead platform-independent
+    types, described in Types.h
+
+5.  If it is possible, don't use boost, gnu c++ and other foreign libraries.
+    GNU C++ and Boost - good and powerful libraries, BUT non-compartible in most
+    architectures and compilers.
+
+6.  All platform-dependent typedefs MUST be placed into file Types.h
+
+7.  Enumeration name are all in mixed case. Enumeration values are all uppercase.
+    enum MyEnum { ONE, TWO .... }
+
+    In declarations, do not put any whitespace between asterisks and adjacent
+    tokens, except for tokens that are identifiers related to types.
+
+8.  Names of structures and classes are in mixed case, instances delimited by changed case.
+    struct FooBar
+    {
+        INT_32    some_field;
+        INT_64    other_field;
+    };
+
+9.  When declaring variables in structures, declare them sorted by use, then
+    by size (largest to smallest), and then in alphabetical order.
+    Variables in structures all lowercase, instances delimited by understrike '_'
+
+10. Variables in classes are in mixed case. Instances delimited by changed case.
+
+    class BarBaz
+    {
+    public:
+            BarBaz();
+            ~BarBaz() throw();
+    private:
+        INT_32    iSomeVariable;
+        INT_64    iOtherVariable;
+    };
+
+11. All destructors MUST have empty list of exceptions.
+    class BarBaz
+    {
+    public:
+         ~BarBaz() throw();
+    };
+
+12. NEVER use public variables in classes.
+    NEVER use private and protected variables in structures.
+    NEVER use magic names and numbers.
+
+13. NEVER use assert macros.
+    Assert, in depends of compiler flags changes behavior of programm.
+    Therefore, programm that compiled with debug option IS NOT the same
+    as a programm without them.
+    Use instead exceptions.
+
+14. Do not use "!" for tests unless it is a boolean, e.g. use
+    if (*p == '\0')
+    not:
+    if (!*p)
+
+15. All branches and loops MUST use braces (`{' and `}'), e.g. use
+    for (;;) { stmt; }
+    not:
+    for (;;) stmt;
+
+16. For infinite loops use for (;;), not while(true)
+
+17. Indentation is an tab (0x09) and space (0x20).
+    Use tabs ONLY in string prefixies, use spaces ONLY in string suffixes, e.g. use
+    class BarBaz
+    {
+    >>         INT_32........iVariable;
+    public:
+    >>         inline BarBaz()
+    >>         {
+    >>         >>         stmt;
+    >>         }
+    };
+
+    struct FooBar
+    {
+    >>         INT_32........var_1;
+    >>         INT_32........var_2;
+    >>         CCHAR_P.......some_data;
+    };
+
+    where `.' - space and `>>' - tab
+
+18. Sources MUST be compiled without warnings with "-Wall -Werror -pedantic -wno-long-long"
+    GNU gcc code checker flags or its analogs in other compilers.
+

@@ -1,0 +1,18 @@
+i pkginfo
+i checkinstall
+i depend
+d none lib 0755 root bin
+f none lib/libiris-conf.so.0.1.22 0644 root root
+s none lib/libiris-conf.so.0.1=libiris-conf.so.0.1.22
+f none lib/libiris-core.so.0.1.22 0644 root root
+s none lib/libiris-core.so.0.1=libiris-core.so.0.1.22
+f none lib/libiris-ev.so.0.1.22 0644 root root
+s none lib/libiris-ev.so.0.1=libiris-ev.so.0.1.22
+f none lib/libiris-net.so.0.1.22 0644 root root
+s none lib/libiris-net.so.0.1=libiris-net.so.0.1.22
+f none lib/libiris-net-ssl.so.0.1.22 0644 root root
+s none lib/libiris-net-ssl.so.0.1=libiris-net-ssl.so.0.1.22
+f none lib/libiris-mt.so.0.1.22 0644 root root
+s none lib/libiris-mt.so=libiris-mt.so.0.1
+f none lib/libiris-util.so.0.1.22 0644 root root
+s none lib/libiris-util.so.0.1=libiris-util.so.0.1.22

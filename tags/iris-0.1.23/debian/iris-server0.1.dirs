@@ -1,0 +1,10 @@
+etc/iris
+etc/iris/conf.d
+etc/iris/handlers.d
+etc/iris/loggers.d
+etc/iris/services.d
+etc/iris/ssl
+etc/logrotate.d
+etc/ufw/applications.d
+var/log/iris
+var/cache/iris

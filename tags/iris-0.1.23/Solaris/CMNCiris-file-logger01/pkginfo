@@ -1,0 +1,13 @@
+ARCH=sparc
+BASEDIR=/opt/csw
+CATEGORY=system
+DESC=Iris TCP server file logger module
+EMAIL=iris@commuico.pro
+HOTLINE=Please contact your local service provider
+MAXINST=1000
+NAME=iris-file-logger - Iris TCP server, file logger module
+PKG=CMNCiris-file-logger01
+VENDOR=Communico, LLC
+VERSION=0.1.23
+CLASSES=none
+
